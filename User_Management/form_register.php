@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("ssss", $username, $hashed, $fullname, $role);
             if ($stmt->execute()) {
-                $message = 'Registrasi berhasil. <a href="login.php">Login</a>';
+                $message = 'Registrasi berhasil. <a href="read_table_view.php">Login</a>';
             } else {
                 $message = 'Error saat menyimpan: ' . $stmt->error;
             }
