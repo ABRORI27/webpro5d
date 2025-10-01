@@ -87,7 +87,7 @@ function validateForm(){
 </head>
 <body>
 <div class="container">
-    <h2>Register User</h2>
+    <h2>User Registration</h2>
     <?php if ($message !== ''): ?>
     <div class="message"><?= $message ?></div>
     <?php endif; ?>
@@ -101,8 +101,8 @@ function validateForm(){
     <label>Password</label>
     <input type="password" id="password" name="password" required>
 
-    <label>Ulangi Password</label>
-    <input type="password" id="repassword" name="repassword" required>
+    <label>Confirm Password</label>
+    <input type="Confirm password" id="repassword" name="repassword" required>
 
     <label>Role</label>
     <div class="roles">
