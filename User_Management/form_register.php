@@ -101,7 +101,7 @@ function validateForm(){
     <label>Password</label>
     <input type="password" id="password" name="password" required>
 
-    <label>Re-enter Password</label>
+    <label>Ulangi Password</label>
     <input type="password" id="repassword" name="repassword" required>
 
     <label>Role</label>
