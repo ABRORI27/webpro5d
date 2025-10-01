@@ -87,11 +87,11 @@ function validateForm(){
 </head>
 <body>
 <div class="container">
-  <h2>Register User</h2>
-  <?php if ($message !== ''): ?>
+    <h2>Register User</h2>
+    <?php if ($message !== ''): ?>
     <div class="message"><?= $message ?></div>
-  <?php endif; ?>
-  <form method="post" onsubmit="return validateForm()">
+    <?php endif; ?>
+    <form method="post" onsubmit="return validateForm()">
     <label>Username</label>
     <input type="text" name="username" required>
 
@@ -106,13 +106,13 @@ function validateForm(){
 
     <label>Role</label>
     <div class="roles">
-      <label><input type="radio" name="role" value="visitor" checked> Visitor</label>
-      <label><input type="radio" name="role" value="operator"> Operator</label>
-      <label><input type="radio" name="role" value="admin"> Admin</label>
+        <label><input type="radio" name="role" value="visitor" checked> Visitor</label>
+        <label><input type="radio" name="role" value="operator"> Operator</label>
+        <label><input type="radio" name="role" value="admin"> Admin</label>
     </div>
 
     <button type="submit">Register</button>
-  </form>
+    </form>
 </div>
 </body>
 </html>
